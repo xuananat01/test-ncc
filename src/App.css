@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  display: flex;
+  height: fit-content;
   min-height: 100vh;
+}
+
+.app .side-bar {
+  min-width: 150px;
+  background-color: black;
+  color: #aaaaaa;
+}
+
+.app .side-bar .menu-item {
+  padding-left: 16px;
+  height: 44px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 700;
+  line-height: 18.75px;
 }
 
-.App-link {
-  color: #61dafb;
+.app .side-bar .menu-item:first-child {
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .side-bar .menu-item:hover {
+  cursor: pointer;
+  background-color: #5c5c5c;
+  color: #ffffff;
+}
+
+.app .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .footer {
+  border: 1px solid #dedede;
+  padding-left: 129px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.app .content .header {
+  margin-right: 129px;
+  margin-left: 129px;
+}
+.app .content .header .logo {
+  width: 310px;
+  height: 122px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app .content .header .lorem-text-box {
+  background-color: #efefef;
+  margin-top: 30px;
+}
+
+.app .content .header .lorem-text-box .lorem-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 38px;
+  padding-bottom: 18px;
+  line-height: 21.09px;
+}
+.app .content .header .lorem-text-box .lorem-text {
+  display: block;
+  text-align: center;
+  line-height: 18.75px;
+  padding-bottom: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.app .content .header .lorem-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.app .content .header .lorem-cards .lorem-card-item {
+  width: 470px;
+  margin-top: 40px;
+}
+
+.app .content .header .lorem-cards .lorem-card-item .lorem-img {
+  width: 128px;
+  height: 128px;
+  float: left;
+  margin: 0 15px 0 0;
+}
+.app .content .header .lorem-cards .lorem-card-item .lorem-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin-bottom: 18px;
+  display: block;
+}
+.app .content .header .lorem-cards .lorem-card-item .lorem-card-text {
+  line-height: 18.75px;
 }
